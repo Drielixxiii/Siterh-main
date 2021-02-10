@@ -1,5 +1,4 @@
-document.documentElement.className += ' js';
-
+document.documentElement.className += " js";
 
 var transparent = true;
 var big_image;
@@ -45,12 +44,6 @@ $(document).ready(function () {
   }
 
   $(".navbar-collapse").click(function () {
-
-
-
-
-
-    
     setTimeout(function () {
       if (pk.misc.navbar_menu_visible == 1) {
         $("html").removeClass("nav-open");
@@ -68,14 +61,14 @@ $(document).ready(function () {
     .on("show.bs.collapse", function () {
       if (
         $("nav").hasClass("navbar-transparent") &&
-        $(document).scrollTop() < 50
+        $(document).scrollTop() < 30
       ) {
         $(".navbar").addClass("no-transition");
         $("nav").removeClass("navbar-transparent");
       }
     })
     .on("hidden.bs.collapse", function () {
-      if ($(document).scrollTop() < 50) {
+      if ($(document).scrollTop() < 30) {
         $(".navbar").removeClass("no-transition");
         $("nav:first-of-type").addClass("navbar-transparent");
       }
@@ -212,7 +205,7 @@ pk = {
       noUiSlider.create(rangeSlider, {
         start: [5000],
         range: {
-          min: [2000],
+          min: [1000],
           max: [10000],
         },
       });
@@ -298,44 +291,3 @@ function hasScrolled() {
 
   lastScrollTop = st;
 }
-
-var maquinadeescrever = document.getElementById("maquinadeescrever");
-
-var typewriter = new Typewriter(maquinadeescrever, {
-  loop: true,
-});
-
-typewriter
-  .start()
-  .pauseFor(3500)
-  .typeString("Bem Vindo(a) à NTL.")
-  .pauseFor(2500)
-  .deleteChars(19)
-  .pauseFor(1000)
-  // .deleteAll()
-  .typeString("Isto é um teste,")
-  .pauseFor(2500)
-  .deleteChars(16)
-  .pauseFor(1000)
-  .typeString("isso é outro teste.")
-  .pauseFor(2500)
-  .deleteChars(19)
-  .pauseFor(1000)
-  .typeString("Continue o tour com a seta")
-  .pauseFor(5000 * 60);
-
-// var i = setInterval(function () {
-//   clearInterval(i);
-//   document.getElementById("loading").style.display = "none";
-//   document.getElementById("conteudo").style.display = "inline";
-// }, 3000);
-
-// window.onload = function onLoad() {
-//   var circle = new ProgressBar.Circle("#progress", {
-//     color: "#38a3a5",
-//     duration: 3000,
-//     easing: "easeInOut",
-//   });
-
-//   circle.animate(1);
-// };
