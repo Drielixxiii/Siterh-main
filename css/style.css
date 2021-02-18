@@ -3,14 +3,6 @@ body {
   overflow-x: hidden;
 }
 
-/* 
-.tudo {
-  background: url(img/Ellipse.png);
-  height: 300px;
-  background-attachment: local;
-  overflow: scroll;
-} */
-
 h1 {
   color: #121214;
   font-family: Helvetica, Arial, sans-serif;
@@ -41,6 +33,14 @@ h3 {
 }
 
 .linha3 {
+  margin-bottom: 25px;
+  background: #32E0C4;
+  width: 100px;
+  height: 5px;
+  animation: crescer 2s normal;
+}
+
+.linha3-direita {
   margin-bottom: 25px;
   background: #32E0C4;
   width: 100px;
@@ -160,14 +160,6 @@ h3 {
   .imagemservico {
     width: 210px;
   }
-  .separação {
-    margin-top: 250px;
-    margin-bottom: 300px;
-    background: #bebebe;
-    width: 450px;
-    height: 2px;
-    margin: 0 auto;
-  }
 }
 
 .contatoimg {
@@ -280,6 +272,7 @@ h3 {
   color: white;
   font-size: 15px;
 }
+
 
 @media(max-width: 1000px) {
   .footer {
@@ -498,4 +491,28 @@ a:link:hover {
 .img-card:hover h3, .img-card:hover p {
   opacity: 1;
   transition-delay: 0.3s;
+}
+
+.parallax {
+  background-image: url("img/mascara.jpg");
+  min-height: 350px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.sobre {
+  width: 100%;
+  max-width: 450px;
+  height: 300px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: foonot-allowed;
+  position: relative;
+  overflow: hidden;
+  opacity: 90%;
 }
