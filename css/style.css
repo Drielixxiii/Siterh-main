@@ -273,10 +273,15 @@ h3 {
   font-size: 15px;
 }
 
-
 @media(max-width: 1000px) {
-  .footer {
-    margin-bottom: 20px;
+  .margem-footer {
+    margin-left: 30px;
+  }
+}
+
+@media(min-width: 1000px) {
+  .margem-footer {
+    margin-left: 120px;
   }
 }
 
@@ -355,7 +360,7 @@ a:link:hover {
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  filter: grayscale(30%);
+  filter: grayscale(10%);
   opacity: 90%;
 }
 
@@ -500,9 +505,9 @@ a:link:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: black;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .sobre {
