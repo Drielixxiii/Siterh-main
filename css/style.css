@@ -8,6 +8,7 @@ h1 {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 40px;
+  cursor: default;
 }
 
 h2 {
@@ -15,6 +16,7 @@ h2 {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 40px;
+  cursor: default;
 }
 
 h3 {
@@ -22,6 +24,7 @@ h3 {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 35px;
+  cursor: default;
 }
 
 .linha2 {
@@ -82,6 +85,7 @@ h3 {
 .marketing .col-lg-4 p {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
+  cursor: default;
 }
 
 .barradivisao-divider {
@@ -276,12 +280,14 @@ h3 {
 @media(max-width: 1000px) {
   .margem-footer {
     margin-left: 30px;
+    padding-bottom: 20px;
   }
 }
 
 @media(min-width: 1000px) {
   .margem-footer {
     margin-left: 120px;
+    padding-bottom: 20px;
   }
 }
 
@@ -426,6 +432,18 @@ a:link:hover {
   transition: all 1s;
 }
 
+.sobre {
+  width: 100%;
+  max-width: 450px;
+  height: 300px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: not-allowed;
+  position: relative;
+  overflow: hidden;
+  opacity: 90%;
+}
+
 @media(min-width:1000px) {
   .content2 {
     display: none;
@@ -475,6 +493,7 @@ a:link:hover {
   transition: all 0.3s;
   color: #fff;
   text-align: center;
+  cursor: default;
 }
 
 .content h3 {
@@ -483,6 +502,7 @@ a:link:hover {
 
 .content p {
   font-size: 18px;
+  cursor: default;
 }
 
 .img-card:hover::before {
@@ -496,10 +516,10 @@ a:link:hover {
 .img-card:hover h3, .img-card:hover p {
   opacity: 1;
   transition-delay: 0.3s;
+  cursor: default;
 }
 
 .parallax {
-  background-image: url("img/mascara.jpg");
   min-height: 350px;
   background-attachment: fixed;
   background-position: center;
@@ -510,14 +530,10 @@ a:link:hover {
   padding-bottom: 100px;
 }
 
-.sobre {
-  width: 100%;
-  max-width: 450px;
-  height: 300px;
-  margin: 10px;
-  border-radius: 5px;
-  cursor: foonot-allowed;
-  position: relative;
-  overflow: hidden;
-  opacity: 90%;
+.pergunta {
+  font-size: 20px;
+}
+
+.resposta {
+  font-size: 15px;
 }
