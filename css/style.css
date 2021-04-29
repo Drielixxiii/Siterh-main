@@ -3,6 +3,23 @@ body {
   overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #F8F8F8;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #4AE3CA 7.81%, #89e6d6e6 92.74%);
+  border-radius: 50px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #38a3a5;
+}
+
 h1 {
   color: #121214;
   font-family: Helvetica, Arial, sans-serif;

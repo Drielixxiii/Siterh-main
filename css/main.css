@@ -22,7 +22,7 @@ nav a {
   padding: 20px 15px;
   font-size: 30px;
   color: #50E4CB;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .navbar .navbar-toggler:focus {
